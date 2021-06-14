@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+    background: #ffc600;
+    font-family: 'helvetica neue';
+    font-size: 20ps;
+    font-weight: 200;
+}
+.body {
+    margin: 0;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.panels {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.panel {
+    background: #6B0F9C;
+    color: white;
+    text-align: center;
+    align-items: center;
+    /* safari transitionend event.propertyName === flex  */
+    /* chrome + FF transitionend event.propertyName === flex.grow */
+    transition: 
+        font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+        flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), 
+        background 0.2s;
+    font-size: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.panel1 { background-image: url(satu.jpg);}
+.panel2 { background-image: url(dua.jpg);}
+.panel3 { background-image: url(tiga.jpg);}
+.panel4 { background-image: url(empat.jpg);}
+.panel5 { background-image: url(lima.jpg);}
